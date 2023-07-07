@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wrapped Chicken", "Wrapped Chicken\Wrapped Chicken.csproj", "{0367C86C-551F-4962-941A-A3F0F97C78D8}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Wrapped Chicken", "Windows Installer\Wrapped Chicken\Wrapped Chicken.vdproj", "{F388E99B-6DFD-4D85-9618-0C6242E0923C}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Wrapped Chicken", "Wrapped Chicken\Wrapped Chicken\Wrapped Chicken\Wrapped Chicken.vdproj", "{66514D6D-C3D1-4566-B576-6A2B73F13491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{0367C86C-551F-4962-941A-A3F0F97C78D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0367C86C-551F-4962-941A-A3F0F97C78D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0367C86C-551F-4962-941A-A3F0F97C78D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F388E99B-6DFD-4D85-9618-0C6242E0923C}.Debug|Any CPU.ActiveCfg = Debug
-		{F388E99B-6DFD-4D85-9618-0C6242E0923C}.Release|Any CPU.ActiveCfg = Release
+		{66514D6D-C3D1-4566-B576-6A2B73F13491}.Debug|Any CPU.ActiveCfg = Debug
+		{66514D6D-C3D1-4566-B576-6A2B73F13491}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

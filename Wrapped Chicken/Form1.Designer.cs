@@ -37,27 +37,26 @@
             this.ButtonCopy = new System.Windows.Forms.Button();
             this.ButtonPaste = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ComboBoxPresets = new System.Windows.Forms.ComboBox();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.textEvents = new System.Windows.Forms.Label();
             this.ButtonCreate = new System.Windows.Forms.Button();
             this.ButtonClear = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ListboxPresets = new System.Windows.Forms.ListBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.textEvents = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.ButtonExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ethnocentric Rg", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Praetorian", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(11, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 28);
+            this.label1.Size = new System.Drawing.Size(282, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Wrapped Chicken";
             // 
@@ -73,7 +72,7 @@
             // 
             // inputCopy
             // 
-            this.inputCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.inputCopy.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputCopy.ForeColor = System.Drawing.Color.White;
             this.inputCopy.Location = new System.Drawing.Point(52, 25);
@@ -84,7 +83,7 @@
             // 
             // inputPaste
             // 
-            this.inputPaste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputPaste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.inputPaste.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputPaste.ForeColor = System.Drawing.Color.White;
             this.inputPaste.Location = new System.Drawing.Point(52, 57);
@@ -105,12 +104,12 @@
             // 
             // ButtonCopy
             // 
-            this.ButtonCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonCopy.BackColor = System.Drawing.Color.Green;
             this.ButtonCopy.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonCopy.ForeColor = System.Drawing.Color.White;
-            this.ButtonCopy.Location = new System.Drawing.Point(294, 24);
+            this.ButtonCopy.Location = new System.Drawing.Point(294, 25);
             this.ButtonCopy.Name = "ButtonCopy";
-            this.ButtonCopy.Size = new System.Drawing.Size(26, 26);
+            this.ButtonCopy.Size = new System.Drawing.Size(26, 22);
             this.ButtonCopy.TabIndex = 5;
             this.ButtonCopy.Text = "◢";
             this.ButtonCopy.UseVisualStyleBackColor = false;
@@ -118,12 +117,12 @@
             // 
             // ButtonPaste
             // 
-            this.ButtonPaste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonPaste.BackColor = System.Drawing.Color.Green;
             this.ButtonPaste.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonPaste.ForeColor = System.Drawing.Color.White;
-            this.ButtonPaste.Location = new System.Drawing.Point(294, 56);
+            this.ButtonPaste.Location = new System.Drawing.Point(294, 57);
             this.ButtonPaste.Name = "ButtonPaste";
-            this.ButtonPaste.Size = new System.Drawing.Size(26, 27);
+            this.ButtonPaste.Size = new System.Drawing.Size(26, 21);
             this.ButtonPaste.TabIndex = 6;
             this.ButtonPaste.Text = "◢";
             this.ButtonPaste.UseVisualStyleBackColor = false;
@@ -132,45 +131,74 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox1.Controls.Add(this.ButtonCreate);
+            this.groupBox1.Controls.Add(this.ButtonClear);
             this.groupBox1.Controls.Add(this.inputCopy);
             this.groupBox1.Controls.Add(this.ButtonPaste);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.ButtonCopy);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.inputPaste);
-            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(16, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(331, 94);
+            this.groupBox1.Size = new System.Drawing.Size(331, 133);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Copy / paste folders";
             // 
+            // ButtonCreate
+            // 
+            this.ButtonCreate.BackColor = System.Drawing.Color.Green;
+            this.ButtonCreate.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCreate.ForeColor = System.Drawing.Color.White;
+            this.ButtonCreate.Location = new System.Drawing.Point(97, 98);
+            this.ButtonCreate.Name = "ButtonCreate";
+            this.ButtonCreate.Size = new System.Drawing.Size(223, 27);
+            this.ButtonCreate.TabIndex = 13;
+            this.ButtonCreate.Text = "Copy";
+            this.ButtonCreate.UseVisualStyleBackColor = false;
+            this.ButtonCreate.Click += new System.EventHandler(this.ButtonCreate_Click);
+            // 
+            // ButtonClear
+            // 
+            this.ButtonClear.BackColor = System.Drawing.Color.Maroon;
+            this.ButtonClear.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonClear.ForeColor = System.Drawing.Color.White;
+            this.ButtonClear.Location = new System.Drawing.Point(9, 98);
+            this.ButtonClear.Name = "ButtonClear";
+            this.ButtonClear.Size = new System.Drawing.Size(82, 27);
+            this.ButtonClear.TabIndex = 14;
+            this.ButtonClear.Text = "Clear";
+            this.ButtonClear.UseVisualStyleBackColor = false;
+            this.ButtonClear.Click += new System.EventHandler(this.ButtonClear_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox2.Controls.Add(this.ComboBoxPresets);
-            this.groupBox2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Controls.Add(this.ListboxPresets);
+            this.groupBox2.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(353, 36);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(142, 94);
+            this.groupBox2.Size = new System.Drawing.Size(142, 133);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Presets";
             // 
-            // ComboBoxPresets
+            // ListboxPresets
             // 
-            this.ComboBoxPresets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ComboBoxPresets.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxPresets.ForeColor = System.Drawing.Color.White;
-            this.ComboBoxPresets.FormattingEnabled = true;
-            this.ComboBoxPresets.Location = new System.Drawing.Point(6, 40);
-            this.ComboBoxPresets.Name = "ComboBoxPresets";
-            this.ComboBoxPresets.Size = new System.Drawing.Size(126, 26);
-            this.ComboBoxPresets.TabIndex = 6;
-            this.ComboBoxPresets.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPresets_SelectedIndexChanged);
+            this.ListboxPresets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.ListboxPresets.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListboxPresets.ForeColor = System.Drawing.Color.White;
+            this.ListboxPresets.FormattingEnabled = true;
+            this.ListboxPresets.ItemHeight = 18;
+            this.ListboxPresets.Location = new System.Drawing.Point(6, 21);
+            this.ListboxPresets.Name = "ListboxPresets";
+            this.ListboxPresets.Size = new System.Drawing.Size(130, 112);
+            this.ListboxPresets.TabIndex = 0;
+            this.ListboxPresets.SelectedIndexChanged += new System.EventHandler(this.ListboxPresets_SelectedIndexChanged);
             // 
             // progressBar
             // 
@@ -184,7 +212,7 @@
             // 
             this.textEvents.AutoSize = true;
             this.textEvents.BackColor = System.Drawing.Color.Black;
-            this.textEvents.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEvents.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEvents.ForeColor = System.Drawing.Color.White;
             this.textEvents.Location = new System.Drawing.Point(401, 25);
             this.textEvents.Name = "textEvents";
@@ -192,83 +220,56 @@
             this.textEvents.TabIndex = 10;
             this.textEvents.Text = "Waiting";
             // 
-            // ButtonCreate
-            // 
-            this.ButtonCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ButtonCreate.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonCreate.ForeColor = System.Drawing.Color.White;
-            this.ButtonCreate.Location = new System.Drawing.Point(6, 25);
-            this.ButtonCreate.Name = "ButtonCreate";
-            this.ButtonCreate.Size = new System.Drawing.Size(325, 27);
-            this.ButtonCreate.TabIndex = 11;
-            this.ButtonCreate.Text = "Copy";
-            this.ButtonCreate.UseVisualStyleBackColor = false;
-            this.ButtonCreate.Click += new System.EventHandler(this.ButtonCreate_Click);
-            // 
-            // ButtonClear
-            // 
-            this.ButtonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ButtonClear.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonClear.ForeColor = System.Drawing.Color.White;
-            this.ButtonClear.Location = new System.Drawing.Point(337, 25);
-            this.ButtonClear.Name = "ButtonClear";
-            this.ButtonClear.Size = new System.Drawing.Size(136, 27);
-            this.ButtonClear.TabIndex = 12;
-            this.ButtonClear.Text = "Clear entry";
-            this.ButtonClear.UseVisualStyleBackColor = false;
-            this.ButtonClear.Click += new System.EventHandler(this.ButtonClear_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox3.Controls.Add(this.ButtonCreate);
-            this.groupBox3.Controls.Add(this.ButtonClear);
-            this.groupBox3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(16, 136);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(479, 59);
-            this.groupBox3.TabIndex = 13;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Actions";
-            // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox4.Controls.Add(this.progressBar);
             this.groupBox4.Controls.Add(this.textEvents);
-            this.groupBox4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(16, 201);
+            this.groupBox4.Location = new System.Drawing.Point(16, 175);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(479, 54);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Worker";
             // 
+            // ButtonExit
+            // 
+            this.ButtonExit.BackColor = System.Drawing.Color.Maroon;
+            this.ButtonExit.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonExit.ForeColor = System.Drawing.Color.White;
+            this.ButtonExit.Location = new System.Drawing.Point(435, 5);
+            this.ButtonExit.Name = "ButtonExit";
+            this.ButtonExit.Size = new System.Drawing.Size(63, 27);
+            this.ButtonExit.TabIndex = 15;
+            this.ButtonExit.Text = "Exit";
+            this.ButtonExit.UseVisualStyleBackColor = false;
+            this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
+            // 
             // Wrapped_Chicken
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(509, 265);
+            this.ClientSize = new System.Drawing.Size(509, 238);
+            this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(527, 312);
-            this.MinimumSize = new System.Drawing.Size(527, 312);
+            this.MaximumSize = new System.Drawing.Size(509, 238);
+            this.MinimumSize = new System.Drawing.Size(509, 238);
             this.Name = "Wrapped_Chicken";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wrapped Chicken";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -287,13 +288,13 @@
         private System.Windows.Forms.Button ButtonPaste;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox ComboBoxPresets;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label textEvents;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button ButtonExit;
+        private System.Windows.Forms.ListBox ListboxPresets;
         private System.Windows.Forms.Button ButtonCreate;
         private System.Windows.Forms.Button ButtonClear;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 

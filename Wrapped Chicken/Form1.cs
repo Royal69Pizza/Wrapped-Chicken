@@ -16,10 +16,9 @@ namespace Wrapped_Chicken
         {
             InitializeComponent();
 
-            ComboBoxPresets.Items.Add("<| Select |>");
-            ComboBoxPresets.Items.Add("XAMPP MySQL");
-            ComboBoxPresets.Items.Add("XAMPP htdocs");
-            ComboBoxPresets.SelectedIndex = 0;
+            ListboxPresets.Items.Add("XAMPP MySQL");
+            ListboxPresets.Items.Add("XAMPP htdocs");
+            ListboxPresets.SelectedIndex = 0;
 
             worker.WorkerSupportsCancellation = true;
             worker.WorkerReportsProgress = true;
@@ -78,7 +77,7 @@ namespace Wrapped_Chicken
         }
 
         /*| Copie un dossier au même endroit que celui ci |*/
-        void CopyFile(string sourceDirName, string destDirName)
+        private void CopyFile(string sourceDirName, string destDirName)
         {
             try
             {
@@ -134,15 +133,10 @@ namespace Wrapped_Chicken
         }
 
         /*| Presets |*/
-        private void ComboBoxPresets_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListboxPresets_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedOption = (string)ComboBoxPresets.SelectedItem;
+            string selectedOption = (string)ListboxPresets.SelectedItem;
 
-            if (selectedOption == "<| Select |>")
-            {
-                inputCopy.Text = "C:\\";
-                inputPaste.Text = "C:\\";
-            }
             if (selectedOption == "XAMPP MySQL")
             {
                 string Date = DateTime.Now.ToString("dd-MM-yyyy");
@@ -155,6 +149,12 @@ namespace Wrapped_Chicken
                 inputCopy.Text = "C:\\xampp\\htdocs";
                 inputPaste.Text = "C:\\xampp\\htdocs-backup-" + Date;
             }
+        }
+
+        /*| Exit |*/
+        private void ButtonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
