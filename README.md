@@ -1,2 +1,2 @@
-# Wrapped-Chicken
+# Wrapped Chicken
 Copy and paste folders
